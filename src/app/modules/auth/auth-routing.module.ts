@@ -12,6 +12,7 @@ const routes: Routes = [
     path: 'sign-up',
     component: SignUpComponent,
   },
+  { path: '**', component: AuthComponent, pathMatch: 'full' },
 ];
 
 @NgModule({
